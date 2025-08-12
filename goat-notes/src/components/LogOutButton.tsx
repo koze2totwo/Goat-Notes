@@ -41,7 +41,3 @@ function LogOutButton() {
 }
 
 export default LogOutButton
-
-function useToast(): { toast: any; } {
-    throw new Error('Function not implemented.');
-}

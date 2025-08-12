@@ -7,6 +7,8 @@ import Header from "@/components/Header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/AppSiderbar";
 import NoteProvider from "@/providers/NoteProvider";
+import { Analytics } from '@vercel/analytics/next';
+
 
 
 
@@ -41,9 +43,12 @@ export default function RootLayout({
           </SidebarProvider>
           
           <Toaster />
+          <Analytics />
 
         </NoteProvider>
           </ThemeProvider>
+
+          
 
 
    
