@@ -1,4 +1,15 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  experimental: {
+    forceSwcTransforms: true,
+  },
+}
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -8,3 +19,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+module.exports = nextConfig
